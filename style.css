@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#heading{
+	font-size: 20px;
+}
+
+#license{
+	font-size: 15px;
+}
+
+#header{
+	margin-left: 4px;
+	margin-right: 4px;
+	display: flex;
+	justify-content: space-between;
+}
