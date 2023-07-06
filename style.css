@@ -8,12 +8,16 @@
 	font-size: 2rem;
 	color: aliceblue;
 	font-family: 'Arial';
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #license{
 	font-size: 1rem;
 	font-family: 'Arial';
 	color: lightgrey;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #header{
@@ -41,4 +45,6 @@
 	color: aliceblue;
 	height: 59px;
 	font-family: 'Arial', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
 }
