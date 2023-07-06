@@ -27,10 +27,14 @@
 }
 
 #body{
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-image: url('Image.jpg');
   background-size: contain;
   background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
 }
 
 #category-header{
