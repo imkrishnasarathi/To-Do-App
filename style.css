@@ -27,6 +27,7 @@
 }
 
 #body{
-  height: 100%;
-  background: 'Image.jpg';
+  height: 100vh;
+  background-image: url('Image.jpg');
+  background-size: 100vw 100vh;
 }
