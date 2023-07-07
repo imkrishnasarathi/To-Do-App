@@ -50,5 +50,9 @@
 	flex-wrap: wrap;
 }
 
+#list{
+  color: white;
+  list-style-type: none;
+}
 
 
