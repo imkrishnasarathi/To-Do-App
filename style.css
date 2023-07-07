@@ -42,6 +42,15 @@
   align-items: center;
 }
 
+#card-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(131, 117, 101);
+	height: 12vh;
+	width: 45vw;
+}
+
 #category-header{
 	color: aliceblue;
 	height: 59px;
@@ -54,10 +63,11 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: rgb(65, 65, 65);
-	height: 45vh;
+	padding-top: 12vh;
+	height: 33vh;
 	width: 45vw;
 }
 
