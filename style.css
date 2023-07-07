@@ -55,4 +55,10 @@
   list-style-type: none;
 }
 
+#list li[class="empty"]:before{
+	content:'⬜ ';
+}
 
+#list li[class="checked"]:before{
+	content:'✅ ';
+}
