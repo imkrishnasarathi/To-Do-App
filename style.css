@@ -50,6 +50,17 @@
 	flex-wrap: wrap;
 }
 
+.card{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(65, 65, 65);
+	height: 45vh;
+	width: 45vw;
+}
+
 #list{
   color: white;
   list-style-type: none;
