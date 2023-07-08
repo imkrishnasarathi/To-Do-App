@@ -101,10 +101,10 @@
 }
 
 #list{
-  color: white;
-  list-style-type: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+	color: white;
+	list-style-type: none;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
 }
 
 #list li[class="empty"]::before{
