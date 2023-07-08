@@ -122,6 +122,25 @@
 	cursor: pointer;
 	font-size: 1rem;
 }
+
+.item{
+	font-size: 1rem;
+}
+
+li .item{
+	visibility: hidden;
+}
+
+li:hover .item{
+	visibility: visible;
+}
+
+btn{
+	height: 3rem;
+	width: 3rem;
+}
+
+
 .footer {
   display: flex;
   flex-wrap: wrap;
