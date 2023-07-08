@@ -53,8 +53,10 @@
 
 #category-header{
 	color: aliceblue;
+	text-align: center;
 	font-family: 'Arial', sans-serif;
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
