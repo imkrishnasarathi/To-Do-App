@@ -90,8 +90,9 @@
 	justify-content: flex-start;
 	align-items: center;
 	background-color: rgb(65, 65, 65);
-	padding-top: 12vh;
-	height: 33vh;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+	height: auto;
 	width: 50vw;
 	border-radius: 0px 0px 20px 20px;
 }
