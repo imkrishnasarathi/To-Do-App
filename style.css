@@ -47,13 +47,12 @@
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(131, 117, 101);
-	height: 12vh;
+	height: 15vh;
 	width: 45vw;
 }
 
 #category-header{
 	color: aliceblue;
-	height: 59px;
 	font-family: 'Arial', sans-serif;
 	display: flex;
 	flex-wrap: wrap;
