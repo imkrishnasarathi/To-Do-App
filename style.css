@@ -71,6 +71,7 @@
 	background-color: rgb(131, 117, 101);
 	height: 12vh;
 	width: 50vw;
+	border-radius: 20px 20px 0px 0px;
 }
 
 #category-header{
@@ -92,6 +93,7 @@
 	padding-top: 12vh;
 	height: 33vh;
 	width: 50vw;
+	border-radius: 0px 0px 20px 20px;
 }
 
 #list{
