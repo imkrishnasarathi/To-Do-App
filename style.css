@@ -136,6 +136,14 @@ li:hover .item{
 	visibility: visible;
 }
 
+.buttons{
+	margin-top: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 5px;
+}
+
 .btn{
 	height: auto;
 	width: auto;
