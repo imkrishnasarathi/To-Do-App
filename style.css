@@ -104,10 +104,10 @@
   font-size: 1.2rem;
 }
 
-#list li[class="empty"]:before{
+#list li[class="empty"]::before{
 	content:'⬜ ';
 }
 
-#list li[class="checked"]:before{
+#list li[class="checked"]::before{
 	content:'✅ ';
 }
