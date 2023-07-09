@@ -102,10 +102,13 @@
 }
 
 #list{
+	margin: 0;
+	padding: 0;
 	color: rgb(230, 224, 224);
 	list-style-type: none;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.2rem;
+	text-align: left;
 }
 
 #list li[class="empty"]::before{
