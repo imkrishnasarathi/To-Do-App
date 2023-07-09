@@ -19,8 +19,14 @@ task.addEventListener('click', function(e){
 form.addEventListener('submit', e => {
   e.preventDefault();
   let value = input.value;
+  if (list.innerHTML.includes('...Enter Your Tasks')){
+    list.innerHTML=`
+  <li class="empty"><span>${value}</span> &nbsp;<button class="opt" id="edit"><i class="fa fa-pencil edit item"></i></button>&nbsp;<button class="opt" id="delete"><i class="fa fa-trash-o delete item"></i></button></li>
+  `;
+  }
+  else{
   list.innerHTML+=`
-  <li class="empty"><span>${value}</span> &nbsp;<button class="opt"><i class="fa fa-pencil edit item"></i></button>&nbsp;<button class="opt"><i class="fa fa-trash-o delete item"></i></button></li>
+  <li class="empty"><span>${value}</span> &nbsp;<button class="opt" id="edit"><i class="fa fa-pencil edit item"></i></button>&nbsp;<button class="opt" id="delete"><i class="fa fa-trash-o delete item"></i></button></li>
   `;
   input.value = ''
 })
