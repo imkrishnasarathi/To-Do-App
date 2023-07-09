@@ -14,6 +14,7 @@ task.addEventListener('click', function(e){
     e.target.classList.remove('checked');
     e.target.classList.add('empty');
   }
+  localStorage.setItem('items', list.innerHTML)
 })
 
 form.addEventListener('submit', e => {
@@ -28,5 +29,7 @@ form.addEventListener('submit', e => {
   list.innerHTML+=`
   <li class="empty"><span>${value}</span> &nbsp;<button class="opt" id="edit"><i class="fa fa-pencil edit item"></i></button>&nbsp;<button class="opt" id="delete"><i class="fa fa-trash-o delete item"></i></button></li>
   `;
+  }
   input.value = ''
+  localStorage.setItem('items', list.innerHTML)
 })
