@@ -1,7 +1,9 @@
-const tasks = Array.from(document.querySelectorAll('#list li'));
+const task = document.querySelector('#list');
 const form = document.querySelector('.add-task');
+const input = document.querySelector('[name="task"]');
+const list = document.querySelector('#list')
 
-tasks.forEach(task => task.addEventListener('click', function(e){
+task.addEventListener('click', function(e){
   if ((e.target.classList.toString()).includes('empty')){
     e.target.classList.remove('empty');
     e.target.classList.add('checked');
@@ -10,5 +12,5 @@ tasks.forEach(task => task.addEventListener('click', function(e){
     e.target.classList.remove('checked');
     e.target.classList.add('empty');
   }
-}))
+})
 
