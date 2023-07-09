@@ -10,7 +10,7 @@ task.addEventListener('click', function(e){
     e.target.classList.remove('empty');
     e.target.classList.add('checked');
   }
-  else{
+  else if ((e.target.classList.toString()).includes('checked')){
     e.target.classList.remove('checked');
     e.target.classList.add('empty');
   }
