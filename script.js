@@ -5,6 +5,7 @@ const list = document.querySelector('#list');
 
 list.innerHTML = localStorage.getItem('items') || '<li>...Enter Your Tasks</li>';
 
+
 task.addEventListener('click', function(e){
   if ((e.target.classList.toString()).includes('empty')){
     e.target.classList.remove('empty');
