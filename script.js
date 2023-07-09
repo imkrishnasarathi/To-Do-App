@@ -41,3 +41,16 @@ Array.from(document.querySelectorAll('[id="delete"]')).forEach(item => item.addE
   list.removeChild(e.target.parentElement.parentElement)
   localStorage.setItem('items', list.innerHTML);
 }))
+
+mark.addEventListener('click', () => {
+  Array.from(document.querySelectorAll('#list li')).forEach(item => {
+    if (item.classList.toString().includes('empty')){
+      item.classList.remove('empty');
+      item.classList.add('checked');
+    }
+    else{
+      return ''
+    }
+    localStorage.setItem('items', list.innerHTML)
+})
+
