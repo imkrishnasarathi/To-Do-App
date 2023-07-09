@@ -7,6 +7,9 @@ const unmark = document.querySelector('#unmark-all')
 
 list.innerHTML = localStorage.getItem('items') || '<li>...Enter Your Tasks</li>';
 
+if (+list.innerHTML === 0){
+  list.innerHTML = '<li>...Enter Your Tasks</li>';
+}
 
 task.addEventListener('click', function(e){
   if ((e.target.classList.toString()).includes('empty')){
