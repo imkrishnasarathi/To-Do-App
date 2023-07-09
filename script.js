@@ -64,5 +64,6 @@ unmark.addEventListener('click', () => {
     else{
       return ''
     }
+    localStorage.setItem('items', list.innerHTML)
   })
 })
