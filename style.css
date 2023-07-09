@@ -155,6 +155,9 @@ li:hover .item{
 	font-size: 1rem;
 }
 
+.add-task{
+	margin-top: 4vh;
+}
 
 .footer {
   display: flex;
