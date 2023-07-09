@@ -1,7 +1,7 @@
 const task = document.querySelector('#list');
 const form = document.querySelector('.add-task');
 const input = document.querySelector('[name="task"]');
-const list = document.querySelector('#list')
+const list = document.querySelector('#list');
 
 list.innerHTML = localStorage.getItem('items') || '<li>...Enter Your Tasks</li>';
 
