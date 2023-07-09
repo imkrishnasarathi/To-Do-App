@@ -55,3 +55,14 @@ mark.addEventListener('click', () => {
   })
 })
 
+unmark.addEventListener('click', () => {
+  Array.from(document.querySelectorAll('#list li')).forEach(item => {
+    if (item.classList.toString().includes('checked')){
+      item.classList.remove('checked');
+      item.classList.add('empty');
+    }
+    else{
+      return ''
+    }
+  })
+})
