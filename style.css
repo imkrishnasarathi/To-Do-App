@@ -159,6 +159,16 @@ li:hover .item{
 	margin-top: 4vh;
 }
 
+.add-task input {
+	box-sizing: border-box;
+	height: auto;
+	width: 8rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	outline: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
 .footer {
   display: flex;
   flex-wrap: wrap;
