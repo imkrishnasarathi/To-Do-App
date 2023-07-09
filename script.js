@@ -37,10 +37,13 @@ form.addEventListener('submit', e => {
   localStorage.setItem('items', list.innerHTML)
 })
 
-Array.from(document.querySelectorAll('[id="delete"]')).forEach(item => item.addEventListener('click', function(e){
-  list.removeChild(e.target.parentElement.parentElement)
-  localStorage.setItem('items', list.innerHTML);
-}))
+list.addEventListener('click', function(e) {
+  if (e.target && e.target.classList.contains('delete')) {
+    const listItem = e.target.closest('li');
+    listItem.parentNode.removeChild(listItem);
+    localStorage.setItem('items', list.innerHTML);
+  }
+});
 
 mark.addEventListener('click', () => {
   Array.from(document.querySelectorAll('#list li')).forEach(item => {
