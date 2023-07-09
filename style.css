@@ -169,6 +169,10 @@ li:hover .item{
 	border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
+.add-task input[name="task"]{
+	cursor: text;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
