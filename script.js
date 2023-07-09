@@ -52,5 +52,6 @@ mark.addEventListener('click', () => {
       return ''
     }
     localStorage.setItem('items', list.innerHTML)
+  })
 })
 
