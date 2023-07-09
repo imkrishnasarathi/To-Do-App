@@ -22,7 +22,7 @@ form.addEventListener('submit', e => {
   let value = input.value;
   if (list.innerHTML.includes('...Enter Your Tasks')){
     list.innerHTML=`
-  <li class="empty"><span>${value}</span> &nbsp;<button class="opt" id="edit"><i class="fa fa-pencil edit item"></i></button>&nbsp;<button class="opt" id="delete"><i class="fa fa-trash-o delete item"></i></button></li>
+  <li class="empty"><span>${value}</span> &nbsp;<button class="opt" id="delete"><i class="fa fa-trash-o delete item"></i></button></li>
   `;
   }
   else{
