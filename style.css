@@ -132,6 +132,10 @@
 	font-size: 1rem;
 }
 
+.opt:hover{
+	color: rgb(255, 255, 255);
+}
+
 .item{
 	font-size: 1rem;
 }
