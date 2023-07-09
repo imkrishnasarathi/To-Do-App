@@ -33,3 +33,16 @@ form.addEventListener('submit', e => {
   input.value = ''
   localStorage.setItem('items', list.innerHTML)
 })
+
+document.querySelector('#list li').addEventListener('click', function(e){
+  if (e.target.classList.contains('opt')) {
+    if (e.target.id === 'edit'){
+      e.target.siblings("span").setAttribute('contenteditable');
+      let r = document.createRange();
+      r.selectNodeContents(e.target.siblings("span"));
+      var sel=window.getSelection(); 
+      sel.removeAllRanges(); 
+      sel.addRange(r); 
+    }
+  }
+})
