@@ -171,7 +171,12 @@ li:hover .item{
 }
 
 .add-task{
-	margin-top: 4vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 5vh;
 }
 
 .add-task input {
