@@ -173,6 +173,10 @@ li:hover .item{
 	cursor: text;
 }
 
+.add-task input[type="submit"]{
+	cursor: pointer;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
