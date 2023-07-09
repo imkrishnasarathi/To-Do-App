@@ -115,6 +115,10 @@
 	content:'⬜ ';
 }
 
+#list li[class="checked"] > span{
+	text-decoration: line-through;
+}
+
 #list li[class="checked"]::before{
 	content:'✅ ';
 }
