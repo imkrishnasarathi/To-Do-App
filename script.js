@@ -35,15 +35,7 @@ form.addEventListener('submit', e => {
   localStorage.setItem('items', list.innerHTML)
 })
 
-document.querySelector('#list li').addEventListener('click', function(e){
-  if (e.target.classList.contains('opt')) {
-    if (e.target.id === 'edit'){
-      e.target.siblings("span").setAttribute('contenteditable');
-      let r = document.createRange();
-      r.selectNodeContents(e.target.siblings("span"));
-      var sel=window.getSelection(); 
-      sel.removeAllRanges(); 
-      sel.addRange(r); 
-    }
-  }
-})
+Array.from(document.querySelectorAll('[id="delete"]')).forEach(item => item.addEventListener('click', function(e){
+  list.removeChild(e.target.parentElement.parentElement)
+  localStorage.setItem('items', list.innerHTML);
+}))
