@@ -1,4 +1,5 @@
 const tasks = Array.from(document.querySelectorAll('#list li'));
+const form = document.querySelector('.add-task');
 
 tasks.forEach(task => task.addEventListener('click', function(e){
   if ((e.target.classList.toString()).includes('empty')){
